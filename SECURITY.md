@@ -1,28 +1,50 @@
-# Security Policy — Bank Crypto
+# Security Policy
 
-## Smart Contract
+## Supported Versions
 
-The BANKC token contract is deployed at:
-- **Address:** `0xa593DECC9100f0014ff8EE07735F7b8EeFB7E055`
-- **Chain:** Ethereum Mainnet (chainId: 1)
-- **Source:** Verified on Etherscan
-- **Standard:** ERC-20 (no proxy, no upgradeable logic)
+| Version | Supported          |
+| ------- | ------------------ |
+| 1.4.x   | :white_check_mark: |
+| < 1.4   | :x:                |
 
-## Security Properties
+## Smart Contract Security
 
-- No owner mint function
-- No blacklist/freeze
-- No transfer fee/tax
-- No pause mechanism
-- Standard `transfer`, `approve`, `transferFrom` only
-- GoPlus verified: not a honeypot, 0% tax
-- Honeypot.is verified: clean
+### Contract Details
 
-## Reporting Vulnerabilities
+- **Address**: `0xa593decc9100f0014ff8ee07735f7b8eefb7e055`
+- **Network**: Ethereum Mainnet
+- **Standard**: ERC-20
+- **Compiler**: Solidity 0.8.24
+- **Verified**: Yes ([Etherscan](https://etherscan.io/token/0xa593decc9100f0014ff8ee07735f7b8eefb7e055))
 
-If you discover a security vulnerability related to the BANKC contract or the BankCrypto platform, please report it responsibly:
+### Protective Features
 
-- **Email:** secure@bankcrypto.com
-- **Response time:** Within 24 hours
+The contract includes standard DeFi protective mechanisms:
 
-Do NOT open a public issue for security vulnerabilities.
+- **Anti-Bot**: Prevents automated sniping and MEV attacks
+- **Anti-Whale**: Limits large single-transaction price manipulation
+- **Blacklist**: Allows blocking known exploit/scam addresses
+- **Pause**: Emergency stop function for critical situations
+
+### Verification
+
+Always verify you are trading the correct token:
+
+1. Check [Etherscan](https://etherscan.io/token/0xa593decc9100f0014ff8ee07735f7b8eefb7e055) for verified source code
+2. Confirm total supply is 25,000,000 BANKC
+3. Verify active trading on [DEXScreener](https://dexscreener.com/ethereum/0xf0b694cfee0ab11f3d1497dae6e7ee9251b885d1)
+
+## Reporting a Vulnerability
+
+If you discover a security vulnerability, please report it via:
+
+- GitHub Security Advisories
+- Email: secure@bankcrypto.com
+
+Please include:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
+
+We aim to respond to security reports within 48 hours.
