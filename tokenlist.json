@@ -1,22 +1,20 @@
 {
-  "name": "Bank Crypto Token List",
-  "timestamp": "2026-05-01T00:00:00+00:00",
+  "name": "BankCrypto Token List",
+  "timestamp": "2026-06-14T00:00:00.000Z",
   "version": {
     "major": 1,
-    "minor": 0,
+    "minor": 4,
     "patch": 0
   },
   "tokens": [
     {
       "chainId": 1,
-      "address": "0xa593DECC9100f0014ff8EE07735F7b8EeFB7E055",
-      "name": "BankCrypto.com",
+      "address": "0xa593decc9100f0014ff8ee07735f7b8eefb7e055",
+      "name": "BankCrypto",
       "symbol": "BANKC",
       "decimals": 18,
-      "logoURI": "https://bankcrypto.com/logo.png",
-      "tags": ["defi", "nft-platform", "gold", "bitcoin"]
+      "logoURI": "https://bankcrypto.com/logo.png"
     }
   ],
-  "keywords": ["bank crypto", "bankcrypto", "bankc", "gold nft", "bitcoin nft", "allocation nft"],
-  "logoURI": "https://bankcrypto.com/logo.png"
+  "keywords": ["bankcrypto", "bankc", "defi", "gold", "silver", "bitcoin"]
 }
